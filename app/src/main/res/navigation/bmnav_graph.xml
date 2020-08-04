@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bmnav_graph"
+    app:startDestination="@id/navigation_beranda">
+    <fragment
+        android:id="@+id/navigation_beranda"
+        android:name="com.sibi.loginapp.fragment.BerandaFragment"
+        android:label="fragment_beranda"
+        tools:layout="@layout/fragment_beranda" >
+        <action
+            android:id="@+id/action_berandaFragment_to_agendaFragment"
+            app:destination="@id/navigation_agenda" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_agenda"
+        android:name="com.sibi.loginapp.fragment.AgendaFragment"
+        android:label="fragment_agenda"
+        tools:layout="@layout/fragment_agenda" >
+        <action
+            android:id="@+id/action_navigation_agenda_to_myProductFragment"
+            app:destination="@id/navigation_myProduct" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_akun"
+        android:name="com.sibi.loginapp.fragment.AkunFragment"
+        android:label="fragment_akun"
+        tools:layout="@layout/fragment_akun" />
+    <fragment
+        android:id="@+id/navigation_myProduct"
+        android:name="com.sibi.loginapp.fragment.MyProductFragment"
+        android:label="fragment_my_product"
+        tools:layout="@layout/fragment_my_product" >
+        <action
+            android:id="@+id/action_myProductFragment_to_navigation_akun"
+            app:destination="@id/navigation_akun" />
+    </fragment>
+</navigation>

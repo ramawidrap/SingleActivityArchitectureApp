@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">a25254162fa2c4357a634b58e7ae86d1-e9b67027acef191a.elb.ap-southeast-1.amazonaws.com</domain>
+    </domain-config>
+</network-security-config>
